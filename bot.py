@@ -16,11 +16,11 @@ def getCharCounts(text, insensitive=False):
     chars = {}
     if insensitive:
         text = text.lower()
-    for i in range(len(text)):
-        if text[i] in chars:
-            chars[text[i]] = chars[text[i]]+1
+    for c in text:
+        if c in chars:
+            chars[c] = chars[c]+1
         else:
-            chars[text[i]] = 1
+            chars[c] = 1
     return chars
 main()
 
