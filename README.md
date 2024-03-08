@@ -1,2 +1,3 @@
 # BookBot
-BookBot is the first Boot.dev Git project. It will read in books (text files, presumably) and provide stats about it.
+BookBot is the first Boot.dev Git project. It will read in text files (of books) and provide stats about them.
+
