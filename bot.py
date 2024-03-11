@@ -22,12 +22,12 @@ def getCharCounts(text, insensitive=True, alpha=True):
 
 #reports some facts about the given text
 def report(path):
-    print(f"--== Report on file: {path} ==--")
+    print(f"--================ Report on file: {path} ================--")
     with open(path) as f:
         text = f.read()
         words = text.split()
         print(f"File contains {wordCount(text)} words separate by whitespace.")
-        print("Found the following number of occurrences of alphanumerical characters (case insensitive):")
+        print("Found the following number of occurrences of letter characters (case insensitive):")
         chars = getCharCounts(text)
         for c in dict(sorted(chars.items(), key=lambda item: item[1],reverse=True)):
             print(f"\"{c}\": {chars[c]}")
